@@ -80,3 +80,15 @@ int main()
 	 
 	return 0;
 }
+//共用体大小
+union un
+{
+	int a;//4 8 ---4
+	char arr[5];//5 1 8 ---1
+};
+int main()
+{
+	union un u;
+	printf("%d",sizeof(u));
+	return 0;
+}
